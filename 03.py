@@ -17,13 +17,14 @@ def lengthOfLongestSubstring(s):
         else:
             while True:
                 charMap[s[l]] = False
-                l += 1
                 currentLength -= 1
                 if s[l] == s[r]:
+                    l += 1
                     break
+                l += 1
     return maxLength
 
 
 class Solution(object):
-    i = lengthOfLongestSubstring("abcabcbb")
+    i = lengthOfLongestSubstring("dvdf")
     print(i)
