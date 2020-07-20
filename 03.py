@@ -13,7 +13,7 @@ def lengthOfLongestSubstring(s):
             charMap[s[r]] = True
             r += 1
             currentLength += 1
-            maxLength = maxLength if maxLength >= currentLength else currentLength
+            maxLength = max(maxLength, currentLength)
         else:
             while True:
                 charMap[s[l]] = False
