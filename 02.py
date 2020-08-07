@@ -16,17 +16,17 @@ def addTwoNumbers(l1, l2):
     tmp = res
 
     while True:
-        sum = add
-        if None != l1:
-            sum = sum + l1.val
+        sumNum = add
+        if l1 is not None:
+            sumNum = sumNum + l1.val
             l1 = l1.next
-        if None != l2:
-            sum = sum + l2.val
+        if l2 is not None:
+            sumNum = sumNum + l2.val
             l2 = l2.next
-        tmp.val = sum % 10
-        add = 1 if (1 == sum // 10) else 0
+        tmp.val = sumNum % 10
+        add = 1 if (1 == sumNum // 10) else 0
         if l1 or l2 or add:
-            tmp.next = ListNode(0);
+            tmp.next = ListNode(0)
             tmp = tmp.next
         else:
             break
