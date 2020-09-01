@@ -17,6 +17,6 @@ def longestCommonPrefix(strs):
 
 
 class Solution(object):
-    strs = ["abca","abc"]
+    strs = ["abca", "abc"]
     s = longestCommonPrefix(strs)
     print(s)
